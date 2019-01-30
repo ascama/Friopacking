@@ -6,55 +6,316 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
     <link type="text/css" rel="stylesheet" href="css/estilos.css"/>
+    <link type="text/css" rel="stylesheet" href="css/bxslider.css"/>
+    <link rel="shortcut icon" href="images/icon.png">
     <title>Friopacking</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <a href="#" class="brand-logo"><img src="images/logo_friopacking.png" alt="Friopacking"></a>
+    <nav class="animated slideInDown">
+        <div class="container-friopacking">
+            <a href="#" class="brand-logo"><img src="images/logo_friopacking.png"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Proyectos</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contáctenos</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#">Tendencias</a></li>
+                <li><a href="#contacts">Contáctenos</a></li>
             </ul>
             </ul>
         </div>
     </nav>
 
-    <div class="header-friopacking">
-        <video id="video" autoplay loop src="video/header.mp4">
-            <!--source src="video/header.mp4" type='video/mp4'-->
+    <div class="header-friopacking scrollspy" id="home">
+        <video id="video" autoplay loop src="video/ultimate.mp4">
+            <!--source src="video/ultimate.mp4" type='video/mp4'-->
         </video>
         <div class="header-mask"></div>
-        <div class="header-title">Expertos en Refrigeración Industrial</div>
-        <div class="header-go"><i class="material-icons">keyboard_arrow_down</i></div>
+        <div class="header-title animated">Expertos en Refrigeración Industrial</div>
+        <a class="header-go animated slideInUp" href="#video-mood"><i class="material-icons">keyboard_arrow_down</i></a>
+        <div class="scrollspy-mood" id="video-mood"></div>
     </div>
 
     <div class="mood">
         <div class="row">
                 <div class="col l4 m4 s12 no-padding">
                     <div class="video-collection">
-                        <video class="video-item" autoplay loop src="video/diseño.mp4"></video>
+                        <video class="video-item" loop src="video/diseño.mp4" id="design"></video>
+                        <div class="video-mask" id="design-mask">
+                            <div class="video-title-mask">Diseño</div>
+                            <div class="video-subtitle-mask">Adecuado diseño a medida y estandarizado</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col l4 m4 s12 no-padding">
                     <div class="video-collection">
-                        <video class="video-item" autoplay loop src="video/ingeneria.mp4"></video>
+                        <video class="video-item" loop src="video/ingenieria.mp4" id="ingenieria"></video>
+                        <div class="video-mask" id="ingenieria-mask">
+                            <div class="video-title-mask">Ingeniería</div>
+                            <div class="video-subtitle-mask">Aplicación de las buenas prácticas de la ingeniería</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col l4 m4 s12 no-padding">
                     <div class="video-collection">
-                        <video class="video-item" autoplay loop src="video/implementacion.mp4"></video>
+                        <video class="video-item" loop src="video/construccion.mp4" id="build"></video>
+                        <div class="video-mask" id="build-mask">
+                            <div class="video-title-mask">Construcción</div>
+                            <div class="video-subtitle-mask">Puesta en marcha con recursos de calidad</div>
+                        </div>
                     </div>
                 </div>
         </div>
-        
+    </div>
+    <div class="about scrollspy" id="about">
+        <div class="container">
+            <div class="row top-about">
+                <div class="col l6 m6 s12"> 
+                    <div class="title-about">Expertos en Refrigeración Industrial</div>
+                    <div class="content-about">El diseño de plantas de proceso de alimentos frescos y congelados es nuestra especialidad, llevamos a cabo proyectos de refrigeración industrial en la modalidad de llave en mano, adecuando el diseño a las necesidades del cliente sin dejar de lado la preservación de la calidad del producto de campo.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-corporativo">
+        <div class="button-corporativo"><i class="material-icons">play_arrow</i></div>
+        <!--div class="text-corporativo">Ver video</div-->
+    </div>
+    <div class="caracteristicas">
+        <div class="wrapper_experience">
+            <div class="experience_box">
+                <p>Empresa lider en refrigeración industrial</p>
+                <div class="bottom">
+                    <div class="number"><span class="count">10</span></div>
+                    <div class="definition">Años de experiencia</div>
+                </div>
+            </div>
+            <div class="wrapper_inner">
+                <div class="inner_wrap">
+                    <div class="number"><span class="count">5</span></div>
+                    <div class="title">Premios</div>
+                </div>
+            </div>           
+        </div>
+    </div>
+    <div class="items">
+        <li><a href=""><img src="images/clientes/agrolatina.png" alt=""></a></li>                  
+        <li><a href=""><img src="images/clientes/agrovision.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/blueberries.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/camposol.png" alt=""></a></li>    
+        <li><a href=""><img src="images/clientes/coexa.png" alt=""></a></li>   
+        <li><a href=""><img src="images/clientes/danper.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/green.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/inkaberries.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/santaazul.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/sunfruits.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/viru.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/aib.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/andrea.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/sanjose.jpeg" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/sangsbarrents.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/vanguard.png" alt=""></a></li>
+        <li><a href=""><img src="images/clientes/manuelita.png" alt=""></a></li>
+    </div>
+
+    <div class="projects scrollspy" id="projects">
+        <div class="projects-pretitle">FRIOPACKING</div>
+        <div class="projects-title">Proyectos</div>
+        <div class="container">
+            <div class="row">
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/aib.png" ></div>
+                        <div class="projects-item-title">Cámaras de AIB</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officiis sunt, adipisci facilis iure a labore, vel perspiciatis ea, itaque possimus ducimus accusantium fuga architecto dolorum aperiam voluptate eum impedit.</div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/danper.png" ></div>
+                        <div class="projects-item-title">Sala de Refrigeración Industrial</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatibus voluptas harum vel recusandae id officiis dolorem aperiam facere sed molestias odit repudiandae veritatis, dolore laudantium, provident similique quod ex.</div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/hortifrut.png" ></div>
+                        <div class="projects-item-title">Túneles doble flujo</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni mollitia libero laudantium aut odit quasi assumenda consequatur iste, quis nulla molestiae maiores, praesentium fugit facilis rem soluta sapiente maxime corporis?</div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/vanguard.png" ></div>
+                        <div class="projects-item-title">Cámaras californianas</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates blanditiis laborum temporibus. Maiores exercitationem, tenetur eaque ab esse sit autem delectus laboriosam provident repudiandae dolorem. Cum quasi debitis facilis.</div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/andrea.png" ></div>
+                        <div class="projects-item-title">Agrícola Andrea</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet non at ipsa aliquam aliquid illo dolorem? Porro suscipit itaque voluptatibus omnis praesentium, sequi, sed et pariatur quibusdam doloremque veritatis quod?</div>
+                    </div>
+                </div>
+                <div class="col l4 m4 s12">
+                    <div class="projects-item">
+                        <div class="projects-item-logo"><img src="images/clientes/viru.png" ></div>
+                        <div class="projects-item-title">Packing Savsa</div>
+                        <div class="projects-item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem soluta sit repellendus voluptatibus provident error praesentium officia saepe, unde beatae cum sunt doloribus reprehenderit dignissimos. Iure optio ipsam autem blanditiis.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimoniales">
+        <div class="container">
+            <div class="testimoniales-pretitle">FRIOPACKING</div>
+            <div class="testimoniales-title">Testimoniales</div>
+            <div class="elementos-testimoniales">
+                <div class="elementos-izquierda">
+                    <div class="elementos-empresa">Hortifrutal SA</div>
+                    <div class="elementos-productos">Arándanos</div>
+                    <div class="elementos-contenido">"Si hablamos de experiencia nos referimos a Friopacking. Ahora contamos con la planta más grande de refrigeración de arándanos en el pais."</div>
+                    <div class="elementos-autor">Huber Castillo, Gerente de Operaciones</div>
+                </div>
+                <div class="elementos-derecha">
+                    <div class="elementos-video">
+                        <video loop src="video/huber.mp4" poster="images/poster-a.jpg"></video>
+                        <div class="elementos-play" data-video="video/huber.mp4"><i class="material-icons">play_arrow</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementos-testimoniales">
+                <div class="elementos-izquierda">
+                    <div class="elementos-empresa">Hoja Redonda</div>
+                    <div class="elementos-productos">Productos conservados</div>
+                    <div class="elementos-contenido">"Tenemos un enfriado perfecto en el sentido que mi primer pallet enfría igual que mi último pallet"</div>
+                    <div class="elementos-autor">Miguel Alayza, Gerente de Operaciones</div>
+                </div>
+                <div class="elementos-derecha">
+                    <div class="elementos-video">
+                        <video loop src="video/hojaredonda.mp4" poster="images/poster-c.jpg"></video>
+                        <div class="elementos-play" data-video="video/hojaredonda.mp4"><i class="material-icons">play_arrow</i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementos-testimoniales">
+                <div class="elementos-izquierda">
+                    <div class="elementos-empresa">Fegurri</div>
+                    <div class="elementos-productos">Uva de mesa</div>
+                    <div class="elementos-contenido">"Se atrevieron a construir un packing de refrigeración industrial en solo 4 meses"</div>
+                    <div class="elementos-autor">Nicolas Mayer, Gerente General</div>
+                </div>
+                <div class="elementos-derecha">
+                    <div class="elementos-video">
+                        <video loop src="video/fegurri.mp4" poster="images/poster-b.jpg"></video>
+                        <div class="elementos-play" data-video="video/fegurri.mp4"><i class="material-icons">play_arrow</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactanos scrollspy" id="contacts">
+        <div class="titulo-contactanos">Contáctenos</div>
+        <div class="row">
+            <div class="col l3 m3 s12">
+                <div class="contacto">
+                    <div class="contacto-imagen">
+                        <img src="images/sede-sur.jpg">
+                        <div class="contacto-maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.757532608844!2d-75.75847199586516!3d-14.032381743536211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9110fd2636d13bef%3A0x7ac9cba46d0c9de1!2sGrupo+Friopacking!5e0!3m2!1ses-419!2spe!4v1548784285600" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                    </div>
+                    <div class="contacto-titulo">
+                        <span>Ica</span> <strong>Sede Sur</strong>
+                        <div class="contacto-location waves-effect"><i class="material-icons">location_on</i></div>
+                    </div>
+                    <div class="contacto-resumen">
+                        <div class="contacto-direccion">Pan. Sur Km. 298 - Subtanjalla</div>
+                        <div class="contacto-sede">operaciones@friopacking.pe</div>
+                        <div class="contacto-telefono">+51 056000000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m3 s12">
+                <div class="contacto">
+                    <div class="contacto-imagen"><img src="https://scontent.ftru3-1.fna.fbcdn.net/v/t1.0-9/43171550_997823867093456_115296739203743744_o.jpg?_nc_cat=110&_nc_ht=scontent.ftru3-1.fna&oh=9b5337f10945dd1628b4bb95c8ed817a&oe=5CB90CEB"></div>
+                    <div class="contacto-titulo">
+                        <span>Lima</span> <strong>Sede Central</strong>
+                        <div class="contacto-location"><i class="material-icons">location_on</i></div>
+                    </div>
+                    <div class="contacto-resumen">
+                        <div class="contacto-direccion">Av. 28 de Julio #753 Oficina. 802 - Miraflores</div>
+                        <div class="contacto-sede">ventas@friopacking.pe</div>
+                        <div class="contacto-telefono">+51 056000000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m3 s12">
+                <div class="contacto">
+                    <div class="contacto-imagen"><img src="images/sede-sur.jpg"></div>
+                    <div class="contacto-titulo">
+                        <span>Lurin</span> <strong>Almacén General</strong>
+                        <div class="contacto-location"><i class="material-icons">location_on</i></div>
+                    </div>
+                    <div class="contacto-resumen">
+                        <div class="contacto-direccion">Pan. Sur Km. 29 Int. H2 - Megacentro Lurin</div>
+                        <div class="contacto-sede">almacen@friopacking.pe</div>
+                        <div class="contacto-telefono">+51 056000000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col l3 m3 s12">
+                <div class="contacto">
+                    <div class="contacto-imagen"><img src="images/sede-sur.jpg"></div>
+                    <div class="contacto-titulo">
+                        <span>Trujillo</span> <strong>Sede Norte</strong>
+                        <div class="contacto-location"><i class="material-icons">location_on</i></div>
+                    </div>
+                    <div class="contacto-resumen">
+                        <div class="contacto-direccion">Los Laureles #242 - California - La Libertad</div>
+                        <div class="contacto-sede">ingenieria@friopacking.pe</div>
+                        <div class="contacto-telefono">+51 056000000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large friopacking pulse">
+          <img src="images/isotipo.png">
+        </a>
+        <ul>
+          <li><a class="btn-floating button__ red"><i class="material-icons">mail</i></a></li>
+          <li><a class="btn-floating button__ blue"><img src="images/skype.png"></a></li>
+          <li><a class="btn-floating button__ green"><img src="images/whatsapp.jpg"></a></li>
+          <li><a class="btn-floating button__ blue"><img src="images/messenger.png"></a></li>
+        </ul>
+      </div>
+    <!--iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrupofriopackingperu%2F&tabs=messages&width=340&height=370&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=262978254151032" width="340" height="370" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe-->
+    
+    <div class="lightbox-youtube">
+        <div class="youtube-close waves-effect"><i class="material-icons">close</i></div>
+        <div class="container-youtube">
+            <iframe id="youtube-lightbox" width="853" height="480" src="https://www.youtube.com/embed/eK3Rve9aK7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="lightbox-video">
+        <div class="lightbox-close waves-effect"><i class="material-icons">close</i></div>
+        <div class="container-video">
+            <video src="" autoplay class="video-lightbox"></video-->
+        </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script type="text/javascript" src="js/bxslider.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    
 </body>
 </html>
